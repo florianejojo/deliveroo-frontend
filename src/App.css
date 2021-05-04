@@ -1,0 +1,204 @@
+/* Other rules */
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 30px;
+    margin: 30px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: black;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    /* font-weight: 700; */
+    margin-bottom: 10px;
+    line-height: initial;
+    color: black;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$   HEADER AND SECTION1   $$$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    margin: 0 auto;
+
+    color: #808484;
+}
+
+header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 160px;
+}
+
+#line {
+    border-bottom: lightgray 1px solid;
+}
+
+.line {
+    border-bottom: lightgray 1px solid;
+}
+
+#section1 {
+    /* background-color: lightgray; */
+    /* padding: 50px 0; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px inherit;
+    /* padding: 20px; */
+}
+
+#section1 div {
+    font-size: 20px;
+    /* color: grey; */
+    /* background-color: lightpink; */
+    padding-right: 30px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    /* font-weight: bold; */
+}
+
+#section1 img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$$    CATEGORIES  AND MEALS    $$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.backGrey {
+    background-color: #f2f5f5;
+    display: flex;
+}
+
+.menus {
+    /* border: red; */
+    background-color: brown;
+    width: 70%;
+}
+
+#menuBasket {
+    display: flex;
+}
+
+.categories {
+    padding: 20px 0;
+    /* background-color: lightgray; */
+    /* width: 100%; */
+}
+
+.mealsPerCategory {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    /* border: 5px red solid; */
+    /* width: 70%; */
+    padding-right: 30px;
+}
+
+.oneMeal {
+    background-color: rgb(248, 244, 244);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    height: 160px;
+    border-radius: 10px;
+    background-color: white;
+    min-width: 365px;
+}
+
+.oneMeal:hover {
+    box-shadow: 0px 20px 70px lightgray;
+}
+
+.oneMeal > div {
+    margin-right: 30px;
+}
+
+.oneMeal img {
+    width: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.oneMeal .desc {
+    font-size: 14px;
+    max-height: 40px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    line-height: 19px;
+}
+
+.oneMeal .popular {
+    color: #ff8005;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$$    BASKET    $$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+.basket {
+    height: 185px;
+    width: 100%;
+    background-color: white;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+
+    /* border-color: red; */
+}
+
+.basket p {
+    text-align: center;
+}
+
+.basket button {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightgray;
+    color: grey;
+    font-size: 15px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+/* $$$$$$    RESPONSIVE   $$$$$$ */
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
+@media (max-width: 800px) {
+    .mealsPerCategory {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
